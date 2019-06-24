@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char str1[100],str2[100];
+	int len1,i=0,len2,same=0;
+	printf("enter the first string");
+	gets(str1);
+	printf("enter the  2nd string");
+	gets(str2);
+	len1=strlen(str1);
+	len2=strlen(str2);
+	if(len1==len2)
+	{	while(i<len1)
+		{
+			if(str1[i]==str2[i])
+			{
+			 i++;
+		       //	printf("string is same");
+			}
+			else
+			{
+			//printf("no");
+			  break;
+			}
+		}   }
+		if(i==len1)
+		{
+			same=1;
+			printf("same string");
+		}
+
+
+		if(len1!=len2)
+		{
+			printf("not equal");
+		}
+		if(same==0)
+		{
+			if(str1[i]>str2[i])
+			{
+				printf("string 1 is greater than string 2");
+			}
+			else if(str1[i]<str2[i])
+			{
+			 printf("2 is > 1");
+			}
+
+
+			 }
+
+
+
+	getch();
+	return 0;
+
+}

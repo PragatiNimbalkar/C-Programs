@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<String.h>
+int main()
+{         char c[5];
+	 int i,j,temp,size,swap;
+	 printf("Enter the size");
+	 scanf("%d",&size);
+	 printf("enter the element");
+	 for(i=0;i<size;i++)
+	 {            swap=0;
+		printf("%d",c[i]);
+	 }
+	 for(i=0;i<=size-1;i++)
+	 {
+		for(j=0;j<=(size-i)-1;j++)
+	       if(c[j]>c[j+1])
+	       {
+		temp=c[j];
+		c[j]=c[j+1];
+		c[j+1]=temp;
+		swap=1;
+
+	       }
+	       printf("%c",temp);
+	 }
+	 getch();
+	 return 0;
+
+
+}
